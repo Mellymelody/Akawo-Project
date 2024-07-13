@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: url(/assets/images/pexels-tranmautritam-245032.jpg) no-repeat center bottom/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    height: 550px;
+    width: 50%;
+    background-color: #071952;
+    opacity: 0.8;
+    margin: auto;
+    border-radius: 15px;
+    padding-left: 65px;
+    padding-top: 15px;
+}
+.container .options{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 25px;
+    flex-direction: column;
+    /* padding-right: 90px; */
+    width: 80%;
+    margin-bottom: 35px;
+}
+.options p{
+    color: #ebf4f6;
+}
+.links{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    gap: 100px;
+    padding-left: 100px;
+}
+.header{
+    margin-left:90px;
+    margin-bottom: 25px;
+    color: #ebf4f6;
+}
+.g a{
+display: flex;
+height: 30px;
+width: 200%;
+background-color: hsl(0, 0%, 30%);
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+}
+.g a img{
+    height: 25px;
+    width: 25px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.lab{
+    font-weight: bolder;
+    margin-bottom: 11px;
+    color: #ebf4f6;
+}
+.in{
+    height: 40px;
+    width: 80%;
+    border-radius: 12px;
+    outline: none;
+    background-color: #ebf4f6;
+    padding-left: 16px;
+}
+.ch{
+    border: none;
+}
+.check{
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 25px;
+    color: #ebf4f6;
+}
+.signup input{
+height: 40px;
+width: 80%;
+background-color: #ebf4f6;
+color: #202020;
+border-radius: 15px;
+}
