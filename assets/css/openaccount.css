@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    background: url(assets/images/pexels-tranmautritam-245032.jpg) no-repeat center bottom/cover;
+    background: url(/assets/images/pexels-tranmautritam-245032.jpg) no-repeat center bottom/cover;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -13,7 +13,7 @@ body{
     align-items: center;
 }
 .container{
-    height: 550px;
+    height: 560px;
     width: 50%;
     background-color: #071952;
     opacity: 0.8;
@@ -21,6 +21,7 @@ body{
     border-radius: 15px;
     padding-left: 65px;
     padding-top: 15px;
+    padding-bottom: px;
 }
 .container .options{
     display: flex;
@@ -44,7 +45,7 @@ body{
 }
 .header{
     margin-left:90px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     color: #ebf4f6;
 }
 .g a{
@@ -63,21 +64,30 @@ border-radius: 10px;
 .name{
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 .email{
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 .password{
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
+.option{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+select{
+    width: 20%;
+    outline: none;
+}
 .lab{
     font-weight: bolder;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
     color: #ebf4f6;
 }
 .in{
@@ -96,8 +106,12 @@ border-radius: 10px;
     gap: 12px;
     font-size: 12px;
     align-items: center;
-    margin-bottom: 25px;
+    /* margin-bottom: 18px; */
     color: #ebf4f6;
+}
+.options{
+    padding-top: 15px;
+    
 }
 .signup input{
 height: 40px;
