@@ -19,7 +19,7 @@
 }
 .bars{
     margin-left: 15px;
-    display: ;
+    
 }
 .leftside{
     width: 20%;
@@ -47,9 +47,6 @@ button{
     padding-right: 5px;
 
 }
-.collapse{
-    display: ;
-}
 .companyname{
     height: 50px;
     width: 90%;
@@ -63,12 +60,6 @@ button{
 .t{
     display: flex;
     align-items: last baseline;
-}
-.t h3{
-    color: black;
-}
-.t h4{
-    color: #071952;
 }
 .userprofile{
     height: 140px;
@@ -84,7 +75,7 @@ button{
 .userprofile .icon{
     height: 70px;
     width: 70px;
-    background-color: #071952;
+    background-color: #088395;
     color: #ebf4f6;
     border-radius: 35px;
     font-size: 50px;
@@ -101,7 +92,7 @@ button{
 }
 .links a{
     text-decoration: none;
-    color: #071952;
+    color: #088395;
 }
 .r{
     margin-bottom: 50px;
@@ -121,28 +112,65 @@ button{
     color: #646464;
     margin-top: 40px;
 }
-.rightside{
-    height: 400px;
-    width: 77%;
-    border-radius: 19px;
+.right{
     display: flex;
-    justify-content: center;
+    /* border: 1px solid black; */
+    /* align-items: center; */
+    height: 580px;
+    width: 77%;
+    /* justify-content: center; */
+}
+.amount{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    /* background-color: #088395; */
+    /* border: 1px solid black; */
 }
-.chr{
-    display: grid;
-    height: 380px;
+.amount h3{
+    color: #646464;
+}
+.t h3{
+    color: #000000;
+}
+.t h4{
+    color: #088395;
+}
+.withpg{
+    height: 53px;
+    width: 35%;
+    margin-top: 22px;
+    border: none;
+    background-color: #e3f8fc;
+    border: 1px solid black;
+}
+.withdrawpg{
+height: 609px;
+/* border: 1px solid black; */
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+padding-top: 70px;
+border-radius: 15px;
+background-color: #088395;
+}
+.type{
+    height: 57px;
+    width: 45%;
     border-radius: 15px;
-    width: 98%;
-    /* background-color: #c1c1c1; */
+    padding-left: 12px;
+    font-size: 30px;
+    /* border: none; */
+    outline-color: #088395;
+    margin-bottom: 30px;
 }
-#myChart{
-    width: 900px;
-}
-
-@media print {
-    .leftside {
-        display: none;
-    }
+::placeholder{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: 5px;
 }

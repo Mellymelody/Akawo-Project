@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 9px;
+    padding-top: 11px;
+}
+.dash{
+    display: flex;
+    gap: 15px;
+    padding-left: 12px;
+    /* padding-top: 35px; */
+}
+.bars{
+    margin-left: 15px;
+    
+}
+.leftside{
+    width: 20%;
+    height: 609px;
+    background-color: hsl(0, 0%, 89%);
+    border-radius: 11px;
+    padding-left: 25px;
+    padding-top: 3px;
+}
+button{
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+
+}
+.companyname{
+    height: 50px;
+    width: 90%;
+    border-radius: 11px;
+    background-color: #ebf4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 19px;
+}
+.t{
+    display: flex;
+    align-items: last baseline;
+}
+.userprofile{
+    height: 140px;
+    width: 90%;
+    background-color: #ebf4f6;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.userprofile .icon{
+    height: 70px;
+    width: 70px;
+    background-color: #071952;
+    color: #ebf4f6;
+    border-radius: 35px;
+    font-size: 50px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.links{
+    gap: 21px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: #071952;
+}
+.r{
+    margin-bottom: 50px;
+}
+.svg{
+    height: 20px;
+    width: 20px;
+}
+.dis{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.logout{
+    gap: 15px;
+    display: flex;
+    color: #646464;
+    margin-top: 40px;
+}
+.right{
+    display: flex;
+    /* border: 1px solid black; */
+    /* align-items: center; */
+    height: 580px;
+    width: 77%;
+    /* justify-content: center; */
+}
+.amount{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.amount h3{
+    color: #646464;
+}
+.a{
+    text-decoration: none;
+    color: #000000;
+    height: 53px;
+    width: 35%;
+    border: none;
+    background-color: #e3f8fc;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t h3{
+    color: #000000;
+}
+.t h4{
+    color: #071952;
+}
+.withdrawalhis{
+    /* border: 1px solid black; */
+    height: 304.5px;
+    width: 100%;
+    border-radius: 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 35px; */
+    align-items: last baseline;
+}
+.withdrawalhis h4{
+    color: #686767;
+    margin-bottom: 29px;
+}
+h2{
+    color: #646464; 
+}
+.lineone{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    background-color: #b1b1b1;
+    /* border: 1px solid black; */
+    
+
+}
+.linetwo{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    background-color: #d4d4d4;
+}
+.lastline{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.withdrawpg{
+height: 609px;
+/* border: 1px solid black; */
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: center; */
+/* gap: 15px; */
+/* padding-top: 10px; */
+border-radius: 15px;
+background-color: #071952;
+}
+.withdrawamoun{
+    height: 304.5;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    gap: 50px;
+    padding-top: 10px;
+}
+.type{
+    height: 57px;
+    width: 45%;
+    border-radius: 15px;
+    padding-left: 12px;
+    font-size: 30px;
+    /* border: none; */
+    outline-color: #071952;
+    /* margin-bottom: 30px; */
+}
+::placeholder{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: 5px;
+}
