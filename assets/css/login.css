@@ -142,3 +142,24 @@ body img{
 .login-register p a:hover{
     text-decoration: underline;
 }
+@media screen and (max-width: 475px){
+    body{
+        height: 100vh;
+        background-color: rgb(216, 216, 216);
+        backdrop-filter: blur(15px);
+    }
+    body img{
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        background-size: cover;
+        background-position: center;
+    }
+    .container{
+        left: 6%;
+        width: 90%;
+        top: 20%;
+    }
+    
+}
