@@ -478,6 +478,7 @@ padding-top: 25px;
     top: 7%;
     /* transition: ease-in-out 0.5s; */
     display: none;
+    /* visibility: hidden; */
 }
 .class{
     /* opacity: 0; */
@@ -532,9 +533,11 @@ padding-top: 25px;
         font-size: 16px;
     }
     .menu{
-        display: block;
+        display: none;
         width: 50%;
         left: 49%;
+        position: fixed;
+        /* visibility:collapse; */
     }
     .crcontain{
         width: 115%;

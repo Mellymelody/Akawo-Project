@@ -31,7 +31,8 @@ hambuger.addEventListener("click", ()=> {
 })
 
 ham.addEventListener("click", ()=> {
-    closed.classList.toggle("class")
+    closed.style.display = "block"
+    closed.classList.toggle("class");
 
 })
 
