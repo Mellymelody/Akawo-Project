@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-image:linear-gradient(#071952, hsl(0, 2%, 75%));
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -13,44 +16,35 @@
 }
 .dash{
     display: flex;
+    width: 100%;
     gap: 15px;
     padding-left: 12px;
     /* padding-top: 35px; */
 }
 .bars{
     margin-left: 15px;
-    display: ;
+    
 }
 .leftside{
     width: 20%;
     height: 609px;
     background-color: hsl(0, 0%, 89%);
     border-radius: 11px;
-    padding-left: 25px;
-    padding-top: 3px;
+    padding-left: 14px;
+    padding-top: 25px;
+    transition: ease-in-out 0.2s;
+    overflow: hidden;
+    /* z-index: 500; */
 }
-button{
-    height: 15px;
-    width: 15px;
-    border-radius: 15px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    padding-bottom: 2px;
-    margin-bottom: 4px;
-}
-.button{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5px;
-
-}
-.collapse{
-    display: ;
+.class{
+    /* opacity: 0; */
+    visibility: hidden;
+    width: 0;
+    transition: ease-in-out 0.5s;
+    overflow: hidden;
 }
 .companyname{
+    overflow: hidden;
     height: 50px;
     width: 90%;
     border-radius: 11px;
@@ -59,16 +53,11 @@ button{
     align-items: center;
     justify-content: center;
     margin-bottom: 19px;
+    box-shadow: 7px 5px 19px;
 }
 .t{
     display: flex;
     align-items: last baseline;
-}
-.t h3{
-    color: black;
-}
-.t h4{
-    color: #071952;
 }
 .userprofile{
     height: 140px;
@@ -80,10 +69,12 @@ button{
     justify-content: center;
     flex-direction: column;
     margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 4px 1px 20px;
 }
 .userprofile .icon{
-    height: 70px;
-    width: 70px;
+    height: 75px;
+    width: 75px;
     background-color: #071952;
     color: #ebf4f6;
     border-radius: 35px;
@@ -92,12 +83,20 @@ button{
     align-items: last baseline;
     justify-content: center;
     margin-bottom: 12px;
+    padding-bottom: 7px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.userprofile:hover{
+    background-color: #c2bebe;
 }
 .links{
     gap: 21px;
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 8px;
 }
 .links a{
     text-decoration: none;
@@ -122,27 +121,86 @@ button{
     margin-top: 40px;
 }
 .rightside{
-    height: 400px;
-    width: 77%;
-    border-radius: 19px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #088395; */
+    /* border: 1px solid black; */
+    /* align-items: center; */
+    height: 608px;
+    border-radius: 15px;
+    /* min-width: 77%; */
+    width: 100%;
+    /* justify-content: center; */
+    /* background-color: #010e36; */
+    /* box-shadow: 12px 11px 30px; */
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 39px;
+    /* transition: ease-in-out 0.2s; */
 }
 .chr{
     display: grid;
-    height: 380px;
-    border-radius: 15px;
-    width: 98%;
-    /* background-color: #c1c1c1; */
+    height: 420px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff8f8;
 }
 #myChart{
-    width: 900px;
+    width: 100%;
+    height: 420px;
 }
 
 @media print {
     .leftside {
         display: none;
     }
+    .bars{
+        display: none;
+    }
+}
+@media screen and (max-width: 470px){
+    .leftside{
+        width: 40%;
+        /* display: none; */
+        z-index: 500;
+        position: absolute;
+        transition: ease-in-out 0.2s;
+    }
+    .class{
+        /* opacity: 0; */
+        visibility: hidden;
+        width: 0;
+        transition: ease-in-out 0.5s;
+        overflow: hidden;
+    }
+    .container{
+        padding-left: 0;
+        padding-right: 15px;
+        /* border: 1px solid black; */
+        height: 800px;
+    }
+    .dash{
+        padding-right: 45px;
+        /* border: 1px solid black; */
+        /* height: 450px; */
+
+    }
+    .right{
+        padding-left: 0;
+        /* padding-right: 42px; */
+        /* margin-right: 0; */
+        /* margin-right: 99px; */
+        border: 1px solid black;
+    }
+    .chr{
+        width: 115%;
+        height: 350px;
+        margin-right: 99px;
+        overflow: hidden;
+    }
+    #myChart{
+        height: 300px;
+        overflow-x: scroll;
+        width: 150%;
+    }
+    
 }

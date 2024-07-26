@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Thriftsave</h1>
+        <div class="left">
+            <a href="">
+                <div class="image">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="p">
+                            <i class="fa-solid fa-plus" id="plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <div class="link">
+            <a class="a" href="" id="r">Edit profile information</a>
+            <a class="a" href="" id="c">Change Password</a>
+            <a class="a" href="" id="e">Change email address</a>
+            <a class="a" href="">Authenticate</a>
+            <a class="a cancel" href="">Cancel</a>
+        </div>
+        </div>
+        <div class="right">
+            <div class="contain">
+                <h4>Edit info.</h4>
+                <form action="" method="post">
+                    <div class="input-box">
+                        <input type="text" name="first" required>
+                        <label for="">First name:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="last" required>
+                        <label for="">Last name:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="user" required>
+                        <label for="">Username</label>
+                    </div>
+                    <input type="submit" class="btn" value="Save changes">
+                </form>
+            </div>
+        </div>
+        <div class="change">
+            <div class="contain">
+                <h4>Change password</h4>
+                <form action="" method="post">
+                    <div class="input-box">
+                        <input type="text" name="current" required>
+                        <label for="">Current password:</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="new" required>
+                        <label for="">New password:</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <a href="">Forgot password?</a>
+                    </div>
+                    <input type="submit" class="btn" value="Save changes">
+                </form>
+            </div>
+        </div>
+        <div class="changeemail">
+            <div class="contain">
+                <h4>Change email address</h4>
+                <form action="" method="post">
+                    <div class="input-box">
+                        <input type="text" name="newemail" required>
+                        <label for="">New email address:</label>
+                    </div>
+                    <input type="submit" class="btn" value="Change email">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>   
+</body>
+</html>

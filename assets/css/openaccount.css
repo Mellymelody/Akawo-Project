@@ -4,110 +4,141 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
-    background: url(assets/images/pexels-tranmautritam-245032.jpg) no-repeat center bottom/cover;
-    height: 100vh;
-    width: 100vw;
+body img{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    max-height: 100vh;
+    width: 100%;
+    /* background: url(assets/images/pexels-tranmautritam-245032.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
 }
 .container{
-    height: 530px;
-    width: 50%;
-    background-color: #071952;
-    opacity: 0.8;
-    margin: auto;
-    border-radius: 15px;
-    padding-left: 65px;
-    padding-top: 15px;
-    padding-bottom: px;
-}
-.container .options{
+    position: absolute;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(167, 166, 166);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* justify-content: center; */
-    gap: 25px;
-    flex-direction: column;
-    /* padding-right: 90px; */
-    width: 80%;
-    margin-bottom: 35px;
+    top: 80px;
+    left: 30%;
+    overflow: hidden;
 }
-.options p{
-    color: #ebf4f6;
-}
-.links{
-    display: flex;
-    gap: 20px;
+.container .form-box{
     width: 100%;
-    gap: 100px;
-    padding-left: 100px;
+    padding: 40px;
 }
-.header{
-    margin-left:90px;
-    margin-bottom: 18px;
-    color: #ebf4f6;
-}
-.g a{
-display: flex;
-height: 30px;
-width: 200%;
-background-color: hsl(0, 0%, 30%);
-align-items: center;
-justify-content: center;
-border-radius: 10px;
-}
-.g a img{
-    height: 25px;
-    width: 25px;
-}
-.name{
+.container .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 49px;
+    background: #00071d;
+    font-size: 1.2em;
+    color: #fff;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-}
-.email{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
-}
-.password{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-.lab{
-    font-weight: bolder;
-    margin-bottom: 9px;
-    color: #ebf4f6;
-}
-.in{
-    height: 40px;
-    width: 80%;
-    border-radius: 12px;
-    outline: none;
-    background-color: #ebf4f6;
-    padding-left: 16px;
-}
-.ch{
-    border: none;
-}
-.check{
-    display: flex;
-    gap: 12px;
-    font-size: 12px;
+    justify-content: center;
     align-items: center;
-    /* margin-bottom: 18px; */
-    color: #ebf4f6;
+    border-bottom-left-radius: 24px;
+    cursor: pointer;
+    z-index: 1;
+
 }
-.options{
-    padding-top: 15px;
-    
+.form-box h2{
+    font-size: 2em;
+    color: #00071d;
+    font-family: Impact, sans-serif;
+    text-align: center;
 }
-.signup input{
-height: 40px;
-width: 80%;
-background-color: #ebf4f6;
-color: #202020;
-border-radius: 15px;
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #00071d;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #00071d;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #00071d;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #00071d;
+}
+.remember-forgot{
+    font-size: .9em;
+    color: #00071d;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #00071d;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #00071d;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #00071d;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.login-register{
+    font-size: .9em;
+    color: #00071d;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: #00071d;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
 }

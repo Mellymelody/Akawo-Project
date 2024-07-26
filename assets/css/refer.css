@@ -136,69 +136,109 @@ a{
     margin-right: 39px;
     /* transition: ease-in-out 0.2s; */
 }
-.t h3{
+.refferal{
+    height: 460px;
+    width: 76%;
+    /* border: 1px solid black; */
+    margin-top: 79px;
+    margin-left: 19px;
+    padding-left: 29px;
+    padding-top: 40px;
+    border-radius: 15px;
+    background-image: linear-gradient(hsl(226, 100%, 12%), #929090);
+}
+.refferal h2{
+    color: #c2bebe;
+    margin-bottom: 65px;
+}
+.refferal .refferalcode{
+    color: #c2bebe;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-bottom: 65px;
+    border-radius: 15px;
+}
+.refferalcode .box{
+    height: 25px;
+    width: 12%;
+    background-color: #ebf4f6;
     color: #000000;
-}
-.t h4{
-    color: #071952;
-}
-.pin{
-    height: 550px;
-    width: 70%;
-    /* border: 1px solid rgb(0, 145, 48); */
-    gap: 65px;
     display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    background-color:#ebf4f6;
-    margin: auto;
-    /* box-shadow: 12px 11px 30px; */
-}
-.top{
-    height: 150;
-    width: 100%;
-    /* border: 1px solid rgb(252, 0, 0); */
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 36px;
-    justify-content: center;
-    padding-top: 20px;
+    padding-left: 8px;
+    border-radius: 5px;
 }
-.boxes{
+.refferallink{
+    color: #c2bebe;
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 19px;
+    margin-bottom: 25px;
 }
-.pCode{
-    height: 60px;
-    border-radius: 15px;
-    width: 60px;
-    /* border: none; */
-    padding-left: 25px;
-    font-size: 20px;
+.link{
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 50%;
+    background-color: #ebf4f6;
+    color: #000000;
+    justify-content: space-between;
+    padding-right: 4px;
+    border-radius: 5px;
+    padding-left: 12px;
 }
-.buttom{
-    height: 150;
-    width: 100%;
-    /* border: 1px solid rgb(55, 0, 107); */
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    padding-left: 25%;
-    padding-right: 20%;
-    gap: 20px;
-}
-.btn{
-    /* height: 30px;
-    width: 35px; */
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    cursor: pointer;
-    background-color: #071952;
-    color: #ebf4f6;
+.link input{
+    height: 25px;
+    width: 80%;
+    background-color: #ebf4f6;
+    color: #000000;
     border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    outline: none;
 }
+button{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #071952;
+    cursor: pointer;
+    color: #141414;
+}
+button:active{
+    background-color:#022aac;
+}
+button:before {
+    content: "copied";
+    position: absolute;
+    top: 55%;
+    right:44%;
+    background: #071952;
+    padding: 8px 10px;
+    color: #ebf4f6;
+    border-radius: 12px;
+    font-size: 12px;
+    display: none;
+}
+button:after{
+    content: "";
+    position: absolute;
+    top: 59%;
+    right:46%;
+    background: #071952;
+    width: 7px;
+    height: 10px;
+    transform: rotate(45deg);
+    display: none;
+}
+button.active button:before,
+button.active button:after{
+    display: block;
+}
+
 @media print {
     .leftside {
         display: none;
@@ -243,27 +283,13 @@ a{
         width: 97%;
         margin-right: 0;
     }
-    .top{
-        /* padding-right: 10px; */
+    .link{
+        width: 90%;
+        padding-left: 0;
     }
-   .pin{
-    width: 100%;
-    margin-left: 8px;
-   }
-   .buttom{
-    /* border: 1px solid black; */
-    padding-right: 20px;
-    padding-left:60px;
-   }
-   .btn{
-    height: 35px;
-    border-radius: 12px;
-    width: 35px;
-   }
-   .pCode{
-    height: 60px;
-    width: 55px;
-   }
+    .refferalcode .box{
+        width: 30%;
+    }
     
     
 }

@@ -7,44 +7,47 @@
     <link rel="stylesheet" href="assets/css/openaccount.css">
 </head>
 <body>
+    <img src="assets/images/pexels-tranmautritam-245032.jpg" alt="">
     <div class="container">
-        <form action="" method="post">
-            <div class="header">
-                <h2>Open an Account</h2>
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+       <div class="form-box register">
+        <h2>Open account</h2>
+        <form action="" method="post" id="formbox">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" name="username" required>
+                <label for="">username</label>
             </div>
-            <div class="info">
-                <div class="name">
-                    <label for="name" class="lab">Name</label>
-                    <input type="text" placeholder="enter your name" class="in" required>
-                </div>
-                <div class="email">
-                    <label for="name" class="lab">Email</label>
-                    <input type="email" placeholder="enter your email address" class="in" required>
-                </div>
-                <div class="password">
-                    <label for="password" class="lab">Password</label>
-                    <input type="password" placeholder="enter your password" class="in" required>
-                </div>
-                <div class="check">
-                    <input type="checkbox" class="ch" required>
-                    <p>By clicking, you agree to our terms of service.</p>
-                </div>
-                <div class="options">
-                    <p>or sign up with</p>
-                    <div class="links">
-                        <div class="g">
-                            <a href=""><img src="assets/images/google-removebg-preview.png" alt=""></a>
-                        </div>
-                        <div class="g">
-                            <a href=""><img src="assets/images/apple-removebg-preview.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="signup">
-                    <input type="submit" value="Sign up">
-                </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" name="email" required>
+                <label for="">Email</label>
             </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock"></ion-icon>
+                </span>
+                <input type="password" name="password" required>
+                <label for="">Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">agree to our terms of service</label>
+            </div>
+            <input type="submit" class="btn" value="Register">
+                <div class="login-register">
+                    <p>Already have an account?<a href="login.html" class="login-link">Login</a></p>
+                </div>
         </form>
+       </div>
     </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="assets/js/signup.js"></script>
 </body>
 </html>
