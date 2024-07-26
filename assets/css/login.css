@@ -155,6 +155,7 @@ body img{
         top: 15%;
         background-size: cover;
         background-position: center;
+        display: none;
     }
     .container{
         left: 6%;
