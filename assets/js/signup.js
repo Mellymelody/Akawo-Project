@@ -1,4 +1,4 @@
-const form = document.querySelector("#formbox")
+const form = document.getElementById("formbox")
 
 // const logregBox = document.querySelector(".logreg-box")
 
@@ -13,7 +13,7 @@ form.addEventListener("submit", (e) => {
        email: form.email.value,
        password: form.password.value 
     }
-    console.log(formEntry);
+    // console.log(formEntry);
 
     let game = arr.push(formEntry);
     console.log(arr);
