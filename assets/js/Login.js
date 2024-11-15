@@ -1,13 +1,14 @@
-const form = document.getElementById("form-login")
+const formn = document.querySelector("#form-login")
 
 const validate = localStorage.getItem("myForms");
 
-form.addEventListener("submit", (e) => {
+
+formn.addEventListener("submit", (e) => {
     e.preventDefault();
     if (validate) {
         const inputFields = JSON.parse(validate)
-        if(form.username.value == inputFields.username && form.password.value == inputFields.password) {
-
+        if(formn.username.value == inputFields.username && formn.password.value == inputFields.password) {
+            
             alert("you have succesfully logged in.");
 
             const newText = {
@@ -18,10 +19,15 @@ form.addEventListener("submit", (e) => {
             sessionStorage.setItem("logins", JSON.stringify(newText))
     
                 location.href = "userdashboard.html"
+                
         }  else {
-            alert("wrong email or password")
+            alert("wrong username or password")
         }
 
 }
 
 })
+
+
+
+

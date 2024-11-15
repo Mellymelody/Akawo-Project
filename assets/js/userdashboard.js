@@ -1,4 +1,4 @@
-const header = document.getElementById("h");
+const header = document.getElementById("user-profile");
 
 const confirm = sessionStorage.getItem("logins");
 function pageload() {

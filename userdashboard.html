@@ -5,81 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/userdashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
 </head>
 <body onload="pageload()">
     <div class="container">
-        <div  class="bars">
-            <i id="bars" class="fa-solid fa-bars"></i>
+<nav class="sidebar">
+   
+</nav>
+<nav class="sidebarr">
+    <div class="logo-menu">
+        <img src="/assets/images/th.png" alt="">
+        <div class="tag">
+            <h2>Thriftsave</h2>
+        <h5>saving made easy</h5>
         </div>
-        <div class="dash">
-            <div class="leftside collapse">
-                <div class="companyname">
-                    <div class="t">
-                        <h3>Thrift<h4>save</h4></h3>
-                    </div>
-                </div>
-                <a class="a" href="profile.html">
-                    <div class="userprofile">
-                        <div class="icon">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="username">
-                            <h4 id="h"></h4>
-                        </div>
-                    </div>
-                </a>
-                <div class="links">
-                    <div class="dash dis">
-                        <img class="svg" src="assets/dashboard.svg" alt="">
-                        <a href="userdashboard.html"><h5>Dashboard</h5></a>
-                    </div>
-                    <div class="con dis">
-                        <img class="svg" src="assets/contribute.svg" alt="">
-                        <a href="paystack.html"><h5>Contribute</h5></a>
-                    </div>
-                    <div class="prin dis">
-                        <img class="svg" src="assets/complain.svg" alt="">
-                        <a href=""><h5>Print</h5></a>
-                    </div>
-                    <div class="with dis">
-                        <img class="svg" src="assets/withdraw.svg" alt="">
-                        <a href="withdraw.html"><h5>Withdraw</h5></a>
-                    </div>
-                    <div class="comp dis">
-                        <img class="svg" src="assets/print.svg" alt="">
-                        <a href="complain.html"><h5>Complain</h5></a>
-                    </div>
-                    <div class="ref dis">
-                        <img class="svg" src="assets/refer.svg" alt="">
-                        <a href="refer.html"><h5>Refer</h5></a>
-                    </div>
-                    <div class="not dis">
-                        <img class="svg" src="assets/images/bell-removebg-preview.png" alt="">
-                        <a href="notification.html"><h5>Notification</h5></a>
-                    </div>
-                    <div class="logout">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <a href="index.html"><h5>Log out</h5></a>
-                    </div>
-                </div>
-            </div>
-            <div class="rightside">
-                <div class="chr" >
-                    <canvas id="myChart">
+    </div>
 
-                    </canvas>
-    
-                </div>
-            </div>
-        </div>
-    
-        </div>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <ul class="profile">
+        <img src="assets/images/user.png" alt="">
+        <h2>Louie558</h2>
+    </ul>
 
-<script>
+    <ul class="list">
+        <li >
+        <a href="" class="list-item">
+            <i class='bx bx-grid-alt'></i>
+            <span class="link-name">Dashboard</span>
+            </a>
+        </li>
+        <li >
+        <a href="" class="list-item">
+            <span class="link-name">Contribute</span>
+        </a>
+        </li>
+        <li >
+            <a href="" class="list-item">
+                <span class="link-name">Print</span>
+            </a>
+        </li>
+        <li >
+            <a href="" class="list-item">
+                <span class="link-name">Withdraw</span>
+            </a>
+        </li>
+        <li >
+            <a href="" class="list-item">
+                <span class="link-name">Report</span>
+            </a>
+        </li>
+        <li >
+            <a href="" class="list-item">
+                <span class="link-name">Settings</span>
+            </a>
+        </li>
+        <li class="list-item last">
+            <a href="">
+                <span class="link-name">Log-out</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="rightbarr">
+<div class="firstbox">
+<div class="box">
+
+</div>
+</div>
+<div class="secondbox">
+    <div class="textbox">
+    <h2>Total contribution for previous months</h2>
+    </div>
+<div class="box">
+
+</div>
+</div>
+<div class="thirdbox">
+
+</div>
+</div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+
+<!-- <script>
 var xValues = [
     "01/01/2024",
     "02/01/2024",
@@ -131,9 +138,10 @@ new Chart("myChart", {
     options: {},
 });
 document.getElementById("myChart").innerHTML = myChart;
-</script>          
+</script>           -->
     
     <script src="assets/js/main.js"></script>
     <script src="assets/js/userdashboard.js"></script>   
+     <script src="assets/js/paystack.js"></script>
 </body>
 </html>
