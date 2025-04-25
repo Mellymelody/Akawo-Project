@@ -5,49 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/openaccount.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <img src="assets/images/pexels-tranmautritam-245032.jpg" alt="">
+    <div class="background"></div>
     <div class="container">
-        <span class="icon-close">
-            <ion-icon name="close"></ion-icon>
-        </span>
-       <div class="form-box register">
-        <h2>Open account</h2>
-        <form action="" method="post" id="formbox">
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="person"></ion-icon>
-                </span>
-                <input type="text" name="username" required>
-                <label for="">username</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="email" name="email" required>
-                <label for="">Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="lock"></ion-icon>
-                </span>
-                <input type="password" name="password" required>
-                <label for="">Password</label>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox">agree to our terms of service</label>
-            </div>
-            <input type="submit" class="btn" value="Register">
-                <div class="login-register">
-                    <p>Already have an account?<a href="login.html" class="login-link">Login</a></p>
-                </div>
-        </form>
-       </div>
+       <div class="content">
+    <div class="firsthead">
+            <img class="ths" src="assets/images/th 1.png" alt="">
+            <h2 class="logo">Thriftsave</h2>
     </div>
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <div class="text-sci">
+            <h2>Welcome To Our Platform!<br><span>Kindly Register To Get Started</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique culpa qui, eum ullam, nobis tempora molestiae sit omnis fugit!</p>
+            <div class="social-icons">
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+       </div>
+       <div class="logreg-box">
+        <div class="form-box register">
+            <form action="" method="post" id="formbox">
+                <h2>Sign up</h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-user'></i>
+                    </span>
+                    <input type="text" name="username" required>
+                    <label for="username">username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="bx bxs-lock-alt"></i>
+                    </span>
+                    <input type="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">agree to our terms of service</label>
+                </div>
+                <input type="submit" class="btn" value="Register">
+                    <div class="login-register">
+                        <p>Already have an account?<a href="" class="login-link">Sign in</a></p>
+                    </div>
+            </form>
+           </div>
+           <div class="form-box login">
+            <form action="" method="post" id="form-login">
+                <h2>Sign in</h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-user'></i>
+                    </span>
+                    <input type="text" name="username" required>
+                    <label for="">username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="bx bxs-lock-alt"></i>
+                    </span>
+                    <input type="password" name="password" required>
+                    <label for="">password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="">Forgot password?</a>
+                </div>
+                <input type="submit" class="btn" value="Sign in">
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="" class="register-link">Register</a></p>
+                    </div>
+            </form>
+    
+           </div>
+        </div>
+       </div>
+    <script src="assets/js/Login.js"></script>
     <script src="assets/js/signup.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

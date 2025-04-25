@@ -5,135 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/userdashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
 </head>
 <body onload="pageload()">
-    <div class="container">
-        <div  class="bars">
-            <i id="bars" class="fa-solid fa-bars"></i>
-        </div>
-        <div class="dash">
-            <div class="leftside collapse">
-                <div class="companyname">
-                    <div class="t">
-                        <h3>Thrift<h4>save</h4></h3>
-                    </div>
-                </div>
-                <a class="a" href="profile.html">
-                    <div class="userprofile">
-                        <div class="icon">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="username">
-                            <h4 id="h"></h4>
-                        </div>
-                    </div>
-                </a>
-                <div class="links">
-                    <div class="dash dis">
-                        <img class="svg" src="assets/dashboard.svg" alt="">
-                        <a href="userdashboard.html"><h5>Dashboard</h5></a>
-                    </div>
-                    <div class="con dis">
-                        <img class="svg" src="assets/contribute.svg" alt="">
-                        <a href="paystack.html"><h5>Contribute</h5></a>
-                    </div>
-                    <div class="prin dis">
-                        <img class="svg" src="assets/complain.svg" alt="">
-                        <a href=""><h5>Print</h5></a>
-                    </div>
-                    <div class="with dis">
-                        <img class="svg" src="assets/withdraw.svg" alt="">
-                        <a href="withdraw.html"><h5>Withdraw</h5></a>
-                    </div>
-                    <div class="comp dis">
-                        <img class="svg" src="assets/print.svg" alt="">
-                        <a href="complain.html"><h5>Complain</h5></a>
-                    </div>
-                    <div class="ref dis">
-                        <img class="svg" src="assets/refer.svg" alt="">
-                        <a href="refer.html"><h5>Refer</h5></a>
-                    </div>
-                    <div class="not dis">
-                        <img class="svg" src="assets/images/bell-removebg-preview.png" alt="">
-                        <a href="notification.html"><h5>Notification</h5></a>
-                    </div>
-                    <div class="logout">
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <a href="index.html"><h5>Log out</h5></a>
-                    </div>
-                </div>
-            </div>
-            <div class="rightside">
-                <div class="chr" >
-                    <canvas id="myChart">
+<div class="container">
+<nav class="sidebar">
+   
+</nav>
+<nav class="sidebarr">
+    <i class='bx bx-menu toggle-btn'></i>
+    <div class="logo-menu">
+        <img src="assets/images/th 1.png" alt="">
+        <h3>Thriftsave</h3>
+    </div>
+    <div class="profile">
+            <a href="">
+                <img src="assets/images/user.png" alt="">
+                <h2>Melly</h2>
+            </a>
+    </div>
 
-                    </canvas>
+    <ul class="list">
+        <div class="list-item">
+            <a href="">
+                <box-icon class="icon" name='grid-alt' color='#f2eff3' ></box-icon>
+                <span class="link-name dash">Dashboard</span>
+            </a>
+        </div>
+        <div class="list-item">
+            <a href="">
+                <box-icon class="icon" name='bank' type='solid' color='#f2eff3' ></box-icon>
+                <span class="link-name depo">Deposite</span>
+            </a>
+        </div>
+        <div class="list-item">
+            <a href="">
+                <box-icon class="icon" name='printer' type='solid' color='#f2eff3' ></box-icon>
+                <span class="link-name prin">Print</span>
+            </a>
+        </div>
+        <div class="list-item">
+            <a href="">
+                <box-icon class="icon" name='money-withdraw' color='#f2eff3' ></box-icon>
+                <span class="link-name with">Withdraw</span>
+            </a>
+        </div>
+        <div class="list-item">
+            <a href="">
+                <box-icon class="icon" name='report' type='solid' color='#f2eff3' ></box-icon>
+                <span class="link-name repo">Report</span>
+            </a>
+        </div>
+        <div class="list-item">
+            <a href="">
+                <box-icon class="icon" name='cog' type='solid' color='#f2eff3' ></box-icon>
+                <span class="link-name sett">Settings</span>
+            </a>
+        </div>
+        <div class="list-item last">
+            <a href="">
+                <box-icon name='log-out' color='#ffffff' ></box-icon>
+                <span class="link-name">Log-out</span>
+            </a>
+        </div>
+    </ul>
+</nav>
+<div class="dashboard">
+ <h2>dashboard</h2>
+</div>
+<div class="deposite">
+<h2>deposite</h2>
+</div>
+<div class="print">
+<h2>print</h2>
+</div>
+<div class="withdraw">
+<h2>withdraw</h2>
+</div>
+<div class="report">
+<h2>report</h2>
+</div>
+<div class="settings">
+<h2>settings</h2>
+</div>
+    </div>
     
-                </div>
-            </div>
-        </div>
-    
-        </div>
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
-<script>
-var xValues = [
-    "01/01/2024",
-    "02/01/2024",
-    "03/01/2024",
-    "04/01/2024",
-    "05/01/2024",
-    "06/01/2024",
-    "07/01/2024",
-    "08/01/2024",
-    "09/01/2024",
-    "10/01/2024",
-    "11/01/2024",
-    "12/01/2024",
-    "13/01/2024",
-    "14/01/2024",
-    "15/01/2024",
-    "16/01/2024",
-    "17/01/2024",
-    "18/01/2024",
-    "19/01/2024",
-    "20/01/2024",
-    "21/01/2024",
-    "22/01/2024",
-    "23/01/2024",
-    "24/01/2024",
-    "25/01/2024",
-    "26/01/2024",
-    "27/01/2024",
-    "28/01/2024",
-    "29/01/2024",
-    "30/01/2024",
-];
-
-var yValues = [1800, 2500, 1800, 1750, 2800, 2000, 1800, 2500, 1800, 1750, 2800, 1900, 1800, 2500, 1800, 1750, 2800, 2000, 1800, 2500, 1800, 1750, 2800, 3000, 1800, 2500, 1800, 1750, 2800, 2000];
-var barColors = ["#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952", "#071952"]
-
-new Chart("myChart", {
-    type: "bar",
-    data: {
-        labels: xValues,
-        datasets: [
-            {
-                pointRadius: 4,
-                backgroundColor: barColors,
-                data: yValues,
-            },
-        ],
-    },
-    options: {},
-});
-document.getElementById("myChart").innerHTML = myChart;
-</script>          
     
     <script src="assets/js/main.js"></script>
     <script src="assets/js/userdashboard.js"></script>   
+     <script src="assets/js/paystack.js"></script>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
