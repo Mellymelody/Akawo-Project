@@ -1,4 +1,5 @@
 const header = document.getElementById("user-profile");
+<<<<<<< HEAD
 
 const dash = document.querySelector(".dash");
 
@@ -23,6 +24,8 @@ const printt = document.querySelector(".print");
 
 
 
+=======
+>>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 
 const confirm = sessionStorage.getItem("logins");
 function pageload() {
