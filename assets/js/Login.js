@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 const formn = document.querySelector("#form-login")
-=======
-const formn = document.getElementById("form-login")
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 
 const validate = localStorage.getItem("myForms");
 

@@ -8,11 +8,7 @@
 .background{
     width: 100%;
     height: 100vh;
-<<<<<<< HEAD
     background: url(assets/images/purplebackground) no-repeat;
-=======
-    background: url(/assets/images/background\ pic.jpg) no-repeat;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     background-size: cover;
     background-position: center;
 }
@@ -23,19 +19,11 @@
     transform: translate(-50%, -50%);
     width: 85%;
     height: 550px;
-<<<<<<< HEAD
     background: url(assets/images/purplebackground) no-repeat;
-=======
-    background: url(/assets/images/background\ pic.jpg) no-repeat;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin-top: 20px;
-<<<<<<< HEAD
-=======
-    /* border: 1px solid black; */
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 }
 .container .content{
     position: absolute;
@@ -51,7 +39,6 @@
     flex-direction: column;
 
 }
-<<<<<<< HEAD
 .content .logo{
     font-size: 20px;
 }
@@ -63,28 +50,6 @@
     height: 30px;
     width: 30px;
    
-=======
-.content .logo-menu{
-    height: 70px;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid black; */
-    border-radius: 10px;
-    /* background: rgb(212, 212, 212); */
-    /* border: 1px solid white; */
-    /* border-top: 0;
-    border-left: 0;
-    border-right: 0; */
-    margin-bottom: 25px;
-    margin-top: 10px;
-    /* margin-left: 0; */
-}
-.content .logo-menu img{
-        height: 45px;
-        width: 45px;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 }
 .text-sci h2{
     font-size: 25px;
@@ -110,15 +75,9 @@ transition: .5s ease;
     top: 0;
     right: 0;
     width: calc(100% - 58%);
-<<<<<<< HEAD
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100%;
     overflow: hidden;
-=======
-    height: 100%;
-    overflow: hidden;
-    /* border: 1px solid black; */
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 }
 .logreg-box .form-box{
     position: absolute;
@@ -132,14 +91,13 @@ transition: .5s ease;
     backdrop-filter: blur(20px);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-<<<<<<< HEAD
     /* border: 4px solid red; */
 }
 .logreg-box .form-box.login{
     transform: translateX(0);
     transition: transform .9s ease;
     transition-delay: .4s; 
-    border: 4px solid rgb(4, 255, 0);
+    /* border: 4px solid rgb(4, 255, 0); */
     } 
     .logreg-box.active .form-box.login{
         transform: translateX(500px);
@@ -156,26 +114,6 @@ transition: .5s ease;
         transform: translateX(0);
         transition-delay: .4s; 
         /* border: 4px solid rgb(246, 255, 0); */
-=======
-}
-.logreg-box .form-box.login{
-    transform: translateX(0);
-    transition: transform .6s ease;
-    transition-delay: .6s; 
-    } 
-    .logreg-box.active .form-box.login{
-        transform: translateX(490px);
-        transition-delay: 0s; 
-    } 
-    .logreg-box .form-box.register{
-        transform: translateX(490px);
-        transition: transform .6s ease;
-        transition-delay: 0s; 
-    }
-    .logreg-box.active .form-box.register{
-        transform: translateX(0);
-        transition-delay: .6s; 
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     }
 .form-box h2{
     /* font-size: 1em; */

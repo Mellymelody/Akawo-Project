@@ -89,16 +89,12 @@
 .comp a{
     text-decoration: none;
 }
-<<<<<<< HEAD
 .menu{
     height: 50%;
     width: 100%;
 }
 .about{
     height: 50%;
-=======
-.about{
-    height: 100vh;
     width: 100%;
     border: 1px solid black;
     position: absolute;
@@ -113,48 +109,6 @@
     padding-left: 50px;
     padding-top: 30px;
     margin-top: 50px;
-}
-.about a{
-    text-decoration: none;
-}
-.features{
-    height: 100vh;
-    width: 100%;
-    border: 1px solid black;
-    position: absolute;
-    position: fixed;
-    background: #e2e2e2;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 1.3em;
-    z-index: 400;
-    display: none;
-    padding-left: 50px;
-    padding-top: 30px;
-    margin-top: 50px;
-}
-.features a{
-    text-decoration: none;
-}
-.testimonials{
-    height: 100vh;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
-    width: 100%;
-    border: 1px solid black;
-    position: absolute;
-    position: fixed;
-    background: #e2e2e2;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 1.3em;
-    z-index: 400;
-    display: none;
-    padding-left: 50px;
-    padding-top: 30px;
-    margin-top: 50px;
-<<<<<<< HEAD
 }
 .about a{
     text-decoration: none;
@@ -195,8 +149,6 @@
     padding-left: 50px;
     padding-top: 30px;
     margin-top: 50px;
-=======
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     padding-bottom: 30px;
     overflow: hidden;
     overflow-y:scroll;
@@ -228,11 +180,7 @@
     width: 10px;
     height: 10px;
     top: 7.5%;
-<<<<<<< HEAD
     left: 34%;
-=======
-    left: 31%;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     transform: rotate(45deg);
     /* border: 1px solid black; */
     background: #e2e2e2;
@@ -245,11 +193,7 @@
     width: 10px;
     height: 10px;
     top: 7.5%;
-<<<<<<< HEAD
-    left: 42%;
-=======
     left: 40.3%;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     transform: rotate(45deg);
     /* border: 1px solid black; */
     background: #e2e2e2;
@@ -275,11 +219,7 @@
     width: 10px;
     height: 10px;
     top: 7.5%;
-<<<<<<< HEAD
     left: 57%;
-=======
-    left: 59%;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     transform: rotate(45deg);
     /* border: 1px solid black; */
     background: #e2e2e2;
@@ -321,7 +261,6 @@
     transform: scale(1.1);
 }
 .intro{
-<<<<<<< HEAD
     background: url(assets/images/pbackground.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -430,28 +369,12 @@
     height: 330px;
     width: 100%;
     border: 1px solid rgb(255, 0, 0);
-=======
-    height: 440px;
-    width: 100%;
-    /* border: 1px solid black; */
-    background-color: rgb(42, 0, 82);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 40px;
-}
-.lighterbox{
-    height: 330px;
-    width: 100%;
-    /* border: 1px solid black; */
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     border-bottom-right-radius: 900px;
     border-bottom-left-radius: 900px;
     background-image: radial-gradient(rgb(255, 255, 255),rgb(247, 247, 247));
     opacity: 0.1;
     backdrop-filter: blur(15);
     z-index: 100;
-<<<<<<< HEAD
 } */
 .tt{
     color: rgb(250, 250, 250);
@@ -468,36 +391,17 @@
     position: absolute;
     top: 13%;
     left: 5%;
-=======
-}
-.intro p{
-    font-size: 27px;
-    color: rgb(255, 255, 255);
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 16%;
-    left: 10%;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     font-weight: 600;
 }
 .imagebox img{
     height: 400px;
-<<<<<<< HEAD
     width: 200px;
     /* position: relative; */
     left: 0%;
-=======
-    width: 260px;
-    position: relative;
-    left: 15%;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
     top: 0px;
     /* z-index: 200; */
 }
 .imagebox{
-<<<<<<< HEAD
     /* border: 1px solid rgb(246, 255, 0); */
     height: 427px;
     width: 690px;
@@ -542,19 +446,6 @@
     background-color: #30008f;
     color: #e2e2e2;
     transform: scale(1.04);
-=======
-    /* border: 1px solid black; */
-    height: 287px;
-    width: 600px;
-    position: absolute;
-    left: 19%;
-    top: 25%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    /* align-items: center; */
-    /* z-index: 200; */
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 }
 .one{
     height: 400px;
@@ -590,7 +481,6 @@
     border-radius: 35px;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     background-image: linear-gradient(white, rgb(216, 133, 249), rgb(69, 0, 134));
 }
 .image img{
@@ -604,22 +494,6 @@
     width: 190px;
     position: absolute;
     top: 95%;
-=======
-
-    background-image: linear-gradient(white, rgb(214, 210, 210), rgb(180, 180, 180));
-}
-.image img{
-    height: 400px;
-    width: 200px;
-    position: absolute;
-    top: 142%;
-}
-.image .on{
-    height: 400px;
-    width: 200px;
-    position: absolute;
-    top: 74%;
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 }
 .two{
     height: 500px;
@@ -670,7 +544,6 @@
 }
 .three{
     padding-left: 19px;
-<<<<<<< HEAD
     /* border: 1px solid black; */
     /* display: flex;
     flex-direction: column;
@@ -684,22 +557,6 @@
     max-width: 1300px;
     width: 100%;
     position: relative;
-=======
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.three .lik{
-    margin-bottom: 25px;
-    /* border: 1px solid black; */
-    width: 100%;
-}
-.wrapper{
-    /* max-width: 1100px; */
-    width: 100%;
-    position: relative;
-    /* border: 1px solid black; */
->>>>>>> e32dfdbb67dfc08fb731c3fcdaeea77e7b0c9ffd
 }
 .wrapper i{
     height: 30px;

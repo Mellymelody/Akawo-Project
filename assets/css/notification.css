@@ -136,9 +136,7 @@ a{
     margin-right: 39px;
     /* transition: ease-in-out 0.2s; */
 }
-.notify{
 
-}
 .notify h4{
     color: #c2bebe;
     margin-top: 15px;
@@ -220,12 +218,6 @@ width: 15%;
         /* padding-right: 15px; */
         /* border: 1px solid black; */
         height: 800px;
-    }
-    .dash{
-        /* padding-right: 45px; */
-        /* border: 1px solid black; */
-        /* height: 450px; */
-
     }
     .right{
         padding-left: 0;
