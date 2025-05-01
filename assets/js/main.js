@@ -21,18 +21,18 @@ edit.addEventListener("click", ()=> {
 
 })
 
-const logregBox = document.querySelector(".logreg-box")
+// const logregBox = document.querySelector(".logreg-box")
 
-const loginlink = document.querySelector(".login-link")
+// const loginlink = document.querySelector(".login-link")
 
-const registerlink = document.querySelector(".register-link")
+// const registerlink = document.querySelector(".register-link")
 
-loginlink.addEventListener("click", (e) => {
-    e.preventDefault();
-    logregBox.classList.remove("active")
-})
+// loginlink.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     logregBox.classList.remove("active")
+// })
 
-registerlink.addEventListener("click", (e) => {
-    e.preventDefault();
-    logregBox.classList.add("active")
-})
+// registerlink.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     logregBox.classList.add("active")
+// })
