@@ -261,9 +261,7 @@
     transform: scale(1.1);
 }
 .intro{
-    background: url(/assets/images/pbackground.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    /* background: url(/assets/images/pbackground.jpeg) no-repeat; */
     width: 100%;
     height: 93vh;
     border-bottom-right-radius: 20px;
@@ -271,8 +269,15 @@
     border: 1px solid black;
     overflow: hidden;
     margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.intro .m{
+   height: 93vh;
+   width: 100%;
+   /* border: 4px solid rgb(0, 222, 133); */
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
 }
 .aa{
     height: 100%;
@@ -282,11 +287,11 @@
     border-bottom-left-radius: 20px
 }
 .b{
-    height: 100%;
+    height: 93vh;
     width: 45%;
     /* border: 2px solid rgb(165, 0, 0); */
     /* background: blue; */
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,6 +301,8 @@
     /* height: 100%; */
     backdrop-filter: blur(5px);
     border-bottom-right-radius: 20px;
+    top: 0%;
+    left: 55%;
 }
 .slides{
   position: relative;
@@ -380,7 +387,7 @@
     color: rgb(250, 250, 250);
     position: absolute;
     top: 18%;
-    left: 5%;
+    left: 2%;
 }
 .intro p{
     font-size: 20px;
@@ -390,7 +397,7 @@
     /* justify-content: center; */
     position: absolute;
     top: 13%;
-    left: 5%;
+    left: 2%;
     font-weight: 600;
 }
 .imagebox img{
@@ -406,7 +413,7 @@
     height: 427px;
     width: 690px;
     position: absolute;
-    left: 5%;
+    left: 2%;
     top: 25%;
     display: flex;
     justify-content: space-between;
