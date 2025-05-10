@@ -1,4 +1,4 @@
-const header = document.getElementById("user-profile");
+const head = document.getElementById("hh");
 
 const dash = document.querySelector(".dash");
 
@@ -16,19 +16,11 @@ const printt = document.querySelector(".print");
 
 
 
-
-
-
-
-
-
-
-
 const confirm = sessionStorage.getItem("logins");
 function pageload() {
     if(confirm){
         const sessionUser = JSON.parse(confirm)
-        header.innerHTML = sessionUser.username
+        head.innerHTML = sessionUser.username
     }
     
 }
@@ -42,5 +34,11 @@ depo.addEventListener("click", (e) => {
 })
 prin.addEventListener("click", (e) => {
     e.preventDefault();
-    printt.classList.toggle(".classs")
+    // function click(){
+        if(dash) {
+            contain.classList.remove("active")
+            removeEventListener
+            }
+    // } 
+    // contain.classList.add("active")
 })
